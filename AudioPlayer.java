@@ -225,7 +225,7 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
                 }, "AudioRecorder Thread");
                 recordingThread.start();
                 //// NOT SURE ABOUT THIS LINE /////
-                this.getClass.setState(STATE.MEDIA_RUNNING);
+                this.setState(STATE.MEDIA_RUNNING);
                 //// ^^^^^^^^^^^^^^^^^^^^^^^ //////
             case RECORD:
                 Log.d(LOG_TAG, "AudioPlayer Error: Already recording.");
